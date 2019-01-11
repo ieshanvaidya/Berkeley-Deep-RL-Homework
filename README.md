@@ -11,9 +11,9 @@ Example hyperparameter grid :
 
 Learning rate = 0.001 and epochs = 30 performed well for all models except Reacher-v2
 
-![alt]https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw1/figures/Ant-v2_hyperparams_tuning.png
+![alt](https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw1/figures/Ant-v2_hyperparams_tuning.png)
 
-![alt]https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw1/figures/Reacher-v2_hyperparams_tuning.png
+![alt](https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw1/figures/Reacher-v2_hyperparams_tuning.png)
 
 Behavior Cloning Results :
 
