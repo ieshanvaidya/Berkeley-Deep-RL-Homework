@@ -28,4 +28,4 @@ DAgger is performed on Reacher-v2 since it performs poorly compared to the exper
 
 DAgger Results :
 
-<img src="https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw1/figures/Reacher-v2_dagger.png" alt="Reacher-v2_dagger" width="420"/>
+<img src="https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw1/figures/Reacher-v2_dagger.png" alt="Reacher-v2_dagger" width="600"/>
