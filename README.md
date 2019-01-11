@@ -7,13 +7,11 @@ Model Architecture :
 - Learning rate (0.001) and epochs (30) tuned by grid search with batch size of 128
 - 30 rollouts of expert
 
-Example hyperparameter grid :
+Hyperparameter grid :
+- The reward values are thresholded below and then scaled for visualization
+- Learning rate = 0.001 and epochs = 30 performed well for all models except Reacher-v2
 
-Learning rate = 0.001 and epochs = 30 performed well for all models except Reacher-v2
-
-![alt](https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw1/figures/Ant-v2_hyperparams_tuning.png)
-
-![alt](https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw1/figures/Reacher-v2_hyperparams_tuning.png)
+<img src="https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw1/figures/Ant-v2_hyperparams_tuning.png" alt="Ant-v2" width="420"/> <img src="https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw1/figures/Reacher-v2_hyperparams_tuning.png" alt="Ant-v2" width="420"/>
 
 Behavior Cloning Results :
 
