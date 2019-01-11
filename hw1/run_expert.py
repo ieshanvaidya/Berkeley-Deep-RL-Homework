@@ -43,7 +43,7 @@ def main():
         observations = []
         actions = []
         for i in range(args.num_rollouts):
-            print('iter', i)
+            #print('iter', i)
             obs = env.reset()
             done = False
             totalr = 0.
@@ -62,9 +62,9 @@ def main():
                     break
             returns.append(totalr)
 
-        print('returns', returns)
-        print('mean return', np.mean(returns))
-        print('std of return', np.std(returns))
+        #print('returns', returns)
+        #print('mean return', np.mean(returns))
+        #print('std of return', np.std(returns))
 
         expert_data = {'observations': np.array(observations),
                        'actions': np.array(actions),

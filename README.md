@@ -3,21 +3,24 @@ Implementations of Reinforcement Learning algorithms from the Berkeley Deep Rein
 
 ### HW1
 Model Architecture :
-- 2 dense layers of 32 neurons with ReLU activation
-- Adam Optimizer with default learning rate 0.001
-- 20 epochs and batch_size of 100
-- 20 rollouts of expert
+- 2 dense layers of 64 neurons with Tanh activation
+- Learning rate (0.001) and epochs (30) tuned by grid search with batch size of 128
+- 30 rollouts of expert
+
+Example hyperparameter grid :
+
+Learning rate = 0.001 and epochs = 30 performed well for all models except Reacher-v2
 
 Behavior Cloning Results :
 
-| Expert         | Mean Expert Reward | Mean Model Reward | Std Expert Reward | Std Model Reward |
-|----------------|--------------------|-------------------|-------------------|------------------|
-| Ant-v2         | 4746.57            | 4729.87           | 612.66            | 97.51            |
-| HalfCheetah-v2 | 4139.85            | 4026.78           | 73.55             | 87.58            |
-| Hopper-v2      | 3778.58            | 2155.87           | 3.93              | 598.73           |
-| Humanoid-v2    | 10411.17           | 380.00            | 51.17             | 92.55            |
-| Reacher-v2     | -3.74              | -7.56             | 1.61              | 3.11             |
-| Walker2d-v2    | 5454.00            | 4855.07           | 485.88            | 498.47           |
+| Expert         | Mean Expert Reward | Mean Model Reward | Std Dev Expert Reward | Std Dev Model Reward |
+|----------------|--------------------|-------------------|-----------------------|----------------------|
+| Ant-v2         | 4816.54            | 4768.42           | 103.12                | 98.73                |
+| HalfCheetah-v2 | 4116.33            | 4085.92           | 83.12                 | 71.80                |
+| Hopper-v2      | 3778.54            | 3778.15           | 3.67                  | 4.71                 |
+| Humanoid-v2    | 10410.32           | 9342.13           | 53.65                 | 2844.41              |
+| Reacher-v2     | -3.71              | -7.98             | 1.79                  | 3.91                 |
+| Walker2d-v2    | 5536.69            | 5507.58           | 54.58                 | 116.72               |
 
 DAgger is performed on Hopper-v2 and Humanoid-v2 since they perform poorly compared to the expert.
 
