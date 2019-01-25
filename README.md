@@ -29,3 +29,14 @@ DAgger is performed on Reacher-v2 since it performs poorly compared to the exper
 DAgger Results :
 
 <img src="https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw1/figures/Reacher-v2_dagger.png" alt="Reacher-v2_dagger" width="600"/>
+
+
+### HW2
+Policy gradient was used for the CartPole-v0 environment with 6 settings as described in the HW document.
+
+<img src="https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw2/figures/sb_averagereturn.png" alt="Small Batch" width="420"/> <img src="https://github.com/ieshanvaidya/Berkeley-Deep-RL-Homework/blob/master/hw2/figures/lb_averagereturn.png" alt="Large Batch" width="420"/>
+
+Observations :
+- Reward-to-go had a better performance than the trajectory-centric estimator in the absence of advantage-centering
+- Advantage-centering did help slightly although using reward-to-go had a much more pronounced effect
+- Having a bigger batch-size resulted in better performance with reduced variance
